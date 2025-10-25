@@ -20,12 +20,12 @@ void loop(){
         sensorValue[i] = digitalRead(pins[i]);
     }
 
-    if(sensorValue[0] == 1){
-        sharpLeft();
+    if(sensorValue[2] == 1){
+        straight();
     }else if(sensorValue[1] == 1){
         slightLeft();
     }else if(sensorValue[2] == 1){
-        straight();
+        sharpLeft();
     }else if(sensorValue[3] == 1){
         slightRight();
     }else if(sensorValue[4] == 1){
@@ -44,26 +44,26 @@ void straight(){
 }
 
 void sharpLeft(){
-    analogWrite(leftForward,0);
+    analogWrite(leftForward,10);
     analogWrite(rightForward,180);
     analogWrite(leftBackward,0);
     analogWrite(rightBackward,0);
 }
 void slightLeft(){
-    analogWrite(leftForward,130);
+    analogWrite(leftForward,110);
     analogWrite(rightForward,180);
     analogWrite(leftBackward,0);
     analogWrite(rightBackward,0);
 }
 void sharpRight(){
     analogWrite(leftForward,180);
-    analogWrite(rightForward,0);
+    analogWrite(rightForward,10);
     analogWrite(leftBackward,0);
     analogWrite(rightBackward,0);
 }
 void slightRight(){
     analogWrite(leftForward,180);
-    analogWrite(rightForward,130);
+    analogWrite(rightForward,110);
     analogWrite(leftBackward,0);
     analogWrite(rightBackward,0);
 }
