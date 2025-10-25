@@ -10,7 +10,7 @@ public:
         void addEdge(T u, T v , bool direction){
             //direction = 0 -> undirected
             //direction = 1 -> directed graph
-            // create an edge from  to v
+            // create an edge from u to v
             adj[u].push_back(v);
 
             if(direction == 0){

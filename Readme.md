@@ -17,10 +17,3 @@ as i am not fully understood it yet
 i should check for straight path first ,then for sharp left/right and then slight turns as 
 if for example but straight and slight left and also slight right sensors get 1 as input , it means we have to move straight for sure
 thats why i should check it first. 
-
-
-#Thing for i used AI --
-- for pin configuration on code
-- extension for arduino code
-- arranging all links provived to study in a sequence for flow and better understanding.
-
