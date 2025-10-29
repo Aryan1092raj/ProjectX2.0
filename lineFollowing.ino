@@ -24,7 +24,7 @@ void loop(){
         straight();
     }else if(sensorValue[1] == 1){
         slightLeft();
-    }else if(sensorValue[2] == 1){
+    }else if(sensorValue[0] == 1){
         sharpLeft();
     }else if(sensorValue[3] == 1){
         slightRight();
