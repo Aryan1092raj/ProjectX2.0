@@ -35,6 +35,7 @@ if __name__ == '__main__' :
         'E':{'C':2, 'D':5},
         'F':{'E':3}
     }
+    
     startNode = 'B'
     goalNode = 'D'
     cost = dijkstra(myGraph,startNode,goalNode)
